@@ -2,6 +2,11 @@ Squander-Client
 ------------------------------------------
 1. npx expo-cli init . --npm
 
+2. for react-navigation
+    a) npm install @react-navigation/native
+    b)npx expo install react-native-screens react-native-safe-area-context
+    c) npm install @react-navigation/native-stack
+
 
 Squander-Server
 ------------------------------------------

@@ -1,10 +1,27 @@
 import React, {useState, useEffect} from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import _loadFontsAsync from './CustomFonts';
 
 import WelcomeScreen from './src/screens/Welcome/WelcomeScreen';
 
+const Stack = createNativeStackNavigator();
+
 const App = ()=>{
-  return <WelcomeScreen />
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen 
+          name="Welcome" 
+          component={WelcomeScreen}
+          options={{
+            headerShown : false
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
 
 export default ()=>{
@@ -19,5 +36,7 @@ export default ()=>{
     return null;
   }
 
-  return <App />
+  return (
+    <App />
+  )
 }
