@@ -13,7 +13,7 @@ import COLORS from '../../constants/COLORS';
 import SIZES from '../../constants/SIZES';
 import FONTS from '../../constants/FONTS';
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({navigation}) => {
     return(
         <View style={styles.container}>
             {/* Logo And Title */}
@@ -34,7 +34,7 @@ const WelcomeScreen = () => {
                             borderRadius: SIZES.radius
                         }}
                         label="Get Started"
-                        onPress={() => console.log("AuthMain")}
+                        onPress={() => navigation.navigate("AuthMain")}
                     />
             </View>
         </View>
