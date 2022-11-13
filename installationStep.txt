@@ -1,3 +1,9 @@
 Squander-Client
 ------------------------------------------
 1. npx expo-cli init . --npm
+
+
+Squander-Server
+------------------------------------------
+1. npm init --y
+2. npm i express
