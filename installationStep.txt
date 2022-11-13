@@ -1,0 +1,3 @@
+Squander-Client
+------------------------------------------
+1. npx expo-cli init . --npm
